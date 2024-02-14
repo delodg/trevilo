@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="flex flex-col justify-center items-center gap-5 px-8 shadow-sm">
           <h5 className="uppercase bg-white/20 backdrop-blur-3xl text-center py-[.1rem] px-3 rounded-3xl text-[.8rem] border border-white/10 tracking-wider align-middle -mb-4">PONTON TREVILO</h5>
           <h1 className="text-6xl text-center font-semibold max-w-screen-lg leading-tight">Discover The Magic In Every Destination With Us!</h1>
-          <p className="text-center -mt-4 text-sm tracking-wide font-light">Enjoy exclusive offers and best prices for satisfying travel packages.</p>
+          <p className="text-center -mt-4 text-md tracking-wide font-light">Enjoy exclusive offers and best prices for satisfying travel packages.</p>
           <div className=" flex flex-row gap-2 bg-white/20 backdrop-blur-3xl text-center py-1 px-1 rounded-3xl border border-white/30 align-middle mt-5 -mb-3">
             <button className="flex flex-row gap-2 text-sky-500 bg-white px-4 py-2 rounded-3xl">
               <i className="ri-hotel-line"></i>
