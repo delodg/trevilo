@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between bg-white gap-6">
+    <main className="flex flex-col items-center justify-between bg-white gap-2">
       <motion.div
         initial={{ opacity: 0, y: [-90] }}
         animate={{ opacity: 1, y: [-255, 0] }}
@@ -35,6 +35,7 @@ export default function Home() {
           </div>
         </div>
       </motion.div>
+      {/* Acá colocar la otra sección */}
     </main>
   );
 }
