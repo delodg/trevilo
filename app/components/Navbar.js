@@ -47,8 +47,8 @@ export default function Navbar() {
           }}
           className="flex flex-row gap-2 w-2/12 justify-end"
         >
-          <button className="py-2 px-4 rounded-3xl font-semibold hover:bg-white hover:text-white hover:text-black transition duration-300 ease-in-out">Signup</button>
-          <button className="py-2 px-4 rounded-3xl font-semibold hover:bg-white hover:text-white hover:text-black transition duration-300 ease-in-out">Login</button>
+          <button className="py-2 px-4 rounded-3xl font-semibold hover:bg-white hover:text-black transition duration-300 ease-in-out">Signup</button>
+          <button className="py-2 px-4 rounded-3xl font-semibold hover:bg-white hover:text-black transition duration-300 ease-in-out">Login</button>
         </motion.div>
       </motion.div>
     </main>
