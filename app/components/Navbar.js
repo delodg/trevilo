@@ -30,11 +30,11 @@ export default function Navbar() {
           <i className="ri-checkbox-blank-circle-fill -m-5 "></i>
           <span className="text-[1rem] font-medium ml-5 tracking-tight	">Trevilo</span>
         </motion.div>
-        <div className="flex flex-row gap-10 text-sm w-8/12 justify-center">
-          <button>Home</button>
-          <button>About Us</button>
-          <button>Service</button>
-          <button>Pricing</button>
+        <div className="flex flex-row gap-5 text-sm w-8/12 justify-center font-medium">
+          <button className="py-2 px-4 rounded-3xl hover:bg-white hover:text-black transition duration-300 ease-in-out">Home</button>
+          <button className="py-2 px-4 rounded-3xl hover:bg-white hover:text-black transition duration-300 ease-in-out">About Us</button>
+          <button className="py-2 px-4 rounded-3xl hover:bg-white hover:text-black transition duration-300 ease-in-out">Service</button>
+          <button className="py-2 px-4 rounded-3xl hover:bg-white hover:text-black transition duration-300 ease-in-out">Pricing</button>
         </div>
         <motion.div
           initial={{ opacity: 0, x: [-90] }}
@@ -45,10 +45,10 @@ export default function Navbar() {
             damping: 50,
             delay: 2,
           }}
-          className="flex flex-row gap-2 w-2/12 justify-end"
+          className="flex flex-row gap-2 w-2/12 justify-end font-medium"
         >
-          <button className="py-2 px-4 rounded-3xl font-semibold hover:bg-white hover:text-black transition duration-300 ease-in-out">Signup</button>
-          <button className="py-2 px-4 rounded-3xl font-semibold hover:bg-white hover:text-black transition duration-300 ease-in-out">Login</button>
+          <button className="py-2 px-4 rounded-3xl hover:bg-white hover:text-black transition duration-300 ease-in-out">Signup</button>
+          <button className="py-2 px-4 rounded-3xl hover:bg-white hover:text-black transition duration-300 ease-in-out">Login</button>
         </motion.div>
       </motion.div>
     </main>
