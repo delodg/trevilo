@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -14,5 +15,19 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.concave-container': {
+          clipPath: 'ellipse(50% 100% at 50% 100%)',
+          // Add other properties and values as needed
+        },
+        '.convex-container': {
+          clipPath: 'ellipse(150% 100% at 50% 100%)',
+          // Additional properties and values can be added if needed
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 };
