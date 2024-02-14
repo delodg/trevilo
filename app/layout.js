@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={'${inter.className} antialiased border-8 border-white rounded-3xl m-4 '}>{children}</body>
+      <body className={'${inter.className} antialiased border-8 border-gray-50 rounded-3xl m-4 '}>{children}</body>
     </html >
   );
 }

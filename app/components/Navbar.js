@@ -24,13 +24,13 @@ export default function Navbar() {
             damping: 50,
             delay: 2,
           }}
-          className="text-4xl flex flex-row justify-center items-center"
+          className="text-4xl flex flex-row justify-start items-center w-2/12"
         >
           <i className="ri-checkbox-blank-circle-fill text-yellow-500"></i>
           <i className="ri-checkbox-blank-circle-fill -m-5 "></i>
           <span className="text-[1rem] font-medium ml-5 tracking-tight	">Trevilo</span>
         </motion.div>
-        <div className="flex flex-row gap-10 text-sm">
+        <div className="flex flex-row gap-10 text-sm w-8/12 justify-center">
           <button>Home</button>
           <button>About Us</button>
           <button>Service</button>
@@ -45,10 +45,10 @@ export default function Navbar() {
             damping: 50,
             delay: 2,
           }}
-          className="flex flex-row gap-5"
+          className="flex flex-row gap-2 w-2/12 justify-end"
         >
-          <button>Signup</button>
-          <button className="py-2 px-4 bg-white text-black rounded-3xl font-semibold">Login</button>
+          <button className="py-2 px-4 rounded-3xl font-semibold hover:bg-white hover:text-white hover:text-black transition duration-300 ease-in-out">Signup</button>
+          <button className="py-2 px-4 rounded-3xl font-semibold hover:bg-white hover:text-white hover:text-black transition duration-300 ease-in-out">Login</button>
         </motion.div>
       </motion.div>
     </main>

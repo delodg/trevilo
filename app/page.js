@@ -3,11 +3,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Clients from "./components/Clients"
+import CardPlaces from "./components/CardPlaces";
 import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between bg-white gap-2">
+    <main className="flex flex-col items-center justify-between bg-gray-50 gap-2">
       <motion.div
         initial={{ opacity: 0, y: [-90] }}
         animate={{ opacity: 1, y: [-255, 0] }}
@@ -37,6 +38,7 @@ export default function Home() {
         </div>
       </motion.div>
       <Clients />
+      <CardPlaces />
       {/* Acá colocar la otra sección */}
     </main>
   );
