@@ -3,7 +3,7 @@ export default function CardDestinations({ imgUrl, locationName, state, country,
     <main>
       <div className="w-full flex flex-row justify-start items-center gap-5 my-8">
         <div style={{ "--image-url": `url(${imgUrl})` }} className="aspect-video h-72 bg-center bg-[image:var(--image-url)] bg-cover rounded-2xl flex flex-row justify-start items-end p-2">
-          <div className="flex flex-row justify-between items-center backdrop-blur-xl px-4 py-2 bg-black/20 border border-white/30 text-white rounded-md w-full gap-5">
+          <div className="flex flex-row justify-between items-center backdrop-blur-xl px-4 py-2 bg-black/20 border border-white/30 text-white rounded-2xl w-full gap-5">
             <div className="flex flex-col justify-start items-start text-lg">
               <div>{locationName}</div>
               <div className="flex flex-row justify-start items-center gap-2 text-xs">
