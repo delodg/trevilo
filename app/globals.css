@@ -36,7 +36,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  @apply bg-gray-300
+  @apply bg-gray-200
 }
 
 h2,
@@ -69,12 +69,12 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-400;
+  @apply bg-slate-300;
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-600;
+  @apply bg-slate-400;
 }
