@@ -2,6 +2,7 @@
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Clients from "./components/Clients"
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
           </div>
         </div>
       </motion.div>
+      <Clients />
       {/* Acá colocar la otra sección */}
     </main>
   );

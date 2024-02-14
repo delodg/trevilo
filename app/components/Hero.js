@@ -36,7 +36,7 @@ export default function Hero() {
             <div className="border-r border-gray-300 pr-6">
               <HeroNavBar buttonName="Check-Out" description="Add Date" icon="ri-calendar-2-line" />
             </div>
-            <HeroNavBar buttonName="Travelers" description="Add Guests" icon="ri-user-6-line" />
+            <HeroNavBar buttonName="Travelers" description="Add Guests" icon="ri-user-4-line" />
             <button className="flex flex-row justify-center items-center py-3 px-5 bg-sky-500 text-white gap-2 rounded-xl ml-5">
               <i className="ri-search-2-line "></i>
               <div className="text-sm">Search</div>
