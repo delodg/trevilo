@@ -28,7 +28,7 @@ export default function Navbar() {
         >
           <i className="ri-checkbox-blank-circle-fill text-yellow-500"></i>
           <i className="ri-checkbox-blank-circle-fill -m-5 "></i>
-          <span className="text-[1rem] font-medium m-5 tracking-tight	">Trevilo</span>
+          <span className="text-[1rem] font-medium ml-5 tracking-tight	">Trevilo</span>
         </motion.div>
         <div className="flex flex-row gap-10 text-sm">
           <button>Home</button>
