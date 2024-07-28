@@ -1,6 +1,9 @@
 @tailwind base;
+/* Tailwind base styles */
 @tailwind components;
+/* Tailwind component styles */
 @tailwind utilities;
+/* Tailwind utility classes */
 
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
@@ -8,52 +11,68 @@
 /* CSS Variables */
 :root {
   --font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Base font family */
   --line-height-base: 1.5;
+  /* Default line height */
   --focus-ring-color: #007acc;
+  /* Focus ring color */
   --focus-ring-offset: 2px;
+  /* Focus ring offset */
   --color-background: #e5e7eb;
+  /* Background color */
   --color-scrollbar-thumb: #cbd5e1;
+  /* Scrollbar thumb color */
   --color-scrollbar-thumb-hover: #94a3b8;
+  /* Scrollbar thumb hover color */
   --color-focus-outline: #ff4500;
+  /* Focus outline color */
 }
 
 /* Basic Setup */
 #root,
 #__next {
   isolation: isolate;
+  /* Create a new stacking context */
 }
 
 html {
   line-height: var(--line-height-base);
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+  /* Set line height */
+  text-size-adjust: 100%;
+  /* Disable font size adjustment in mobile browsers */
   scroll-behavior: smooth;
+  /* Smooth scrolling */
   font-family: var(--font-family-base);
+  /* Set base font family */
 }
 
 *,
 *::before,
 *::after {
   margin: 0;
-  min-width: 0;
-  font: inherit;
+  /* Remove default margins */
   box-sizing: border-box;
+  /* Ensure padding and border are included in element's total width and height */
 }
 
 body {
   min-height: 100vh;
+  /* Ensure body is at least full viewport height */
   margin: 0;
+  /* Remove default body margin */
   font-family: var(--font-family-base);
-  font-optical-sizing: auto;
+  /* Set base font family */
   background-color: var(--color-background);
-  font-size: 1rem;
+  /* Set background color */
   -webkit-font-smoothing: antialiased;
+  /* Improve font rendering on macOS */
   -moz-osx-font-smoothing: grayscale;
+  /* Improve font rendering on macOS */
 }
 
 main {
   display: block;
+  /* Ensure main is a block element */
 }
 
 /* Typography */
@@ -68,21 +87,11 @@ button,
 input,
 label {
   text-wrap: balance;
+  /* Balance text wrapping */
   overflow-wrap: break-word;
+  /* Break words to prevent overflow */
   font-weight: 500;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin-block-end: 0;
+  /* Set medium font weight */
 }
 
 /* Forms and Buttons */
@@ -91,23 +100,31 @@ button,
 textarea,
 select {
   font-family: inherit;
+  /* Inherit font family */
   font-size: inherit;
+  /* Inherit font size */
   margin: 0;
+  /* Remove default margin */
   line-height: 1.15;
+  /* Set line height */
 }
 
 textarea:not([rows]) {
   min-height: 10em;
+  /* Ensure minimum height for textareas */
 }
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  /* Improve text decoration */
   color: currentColor;
+  /* Inherit current text color */
 }
 
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+  /* Remove list styling */
 }
 
 img,
@@ -116,58 +133,67 @@ video,
 canvas,
 svg {
   display: block;
+  /* Ensure media elements are block elements */
   height: auto;
+  /* Maintain aspect ratio */
   max-width: 100%;
-}
-
-img {
-  vertical-align: middle;
-  font-style: italic;
-  background-repeat: no-repeat;
-  background-size: cover;
-  shape-margin: 0.75rem;
+  /* Scale media elements with the container */
 }
 
 :focus-visible {
   outline: 2px solid var(--color-focus-outline);
+  /* Focus outline color */
   outline-offset: var(--focus-ring-offset);
+  /* Focus outline offset */
 }
 
 [hidden] {
   display: none;
+  /* Hide elements with hidden attribute */
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
+  /* Set scrollbar width */
   transition: all 1s ease-in-out;
+  /* Smooth scrollbar transition */
 }
 
 ::-webkit-scrollbar-track {
   background-color: transparent;
+  /* Transparent scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-scrollbar-thumb);
+  /* Scrollbar thumb color */
   border-radius: 20px;
+  /* Round scrollbar thumb */
   border: 6px solid transparent;
+  /* Transparent border for spacing */
   background-clip: content-box;
+  /* Clip background to content box */
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-scrollbar-thumb-hover);
+  /* Scrollbar thumb hover color */
 }
 
 /* Text Utilities */
 .text-balance {
   text-wrap: balance;
+  /* Balance text wrapping */
 }
 
 .text-pretty {
   text-wrap: pretty;
+  /* Pretty text wrapping */
 }
 
 /* Target Element Scrolling */
 :target {
   scroll-margin-block: 5ex;
+  /* Offset scroll position for target elements */
 }
