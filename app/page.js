@@ -14,7 +14,7 @@ export default function Home() {
         animate={{ opacity: 1, y: [-255, 0] }}
         transition={{
           type: "spring",
-          stiffness: 300,
+          stiffness: 60,
           damping: 50,
         }}
         className=" bg-center bg-[url('/bg-hero.jpg')] bg-cover w-full flex rounded-2xl"
