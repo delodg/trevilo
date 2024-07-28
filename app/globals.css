@@ -67,7 +67,6 @@ p,
 button,
 input,
 label {
-  line-height: 1.1;
   text-wrap: balance;
   overflow-wrap: break-word;
   font-weight: 500;
