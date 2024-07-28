@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /* CSS Variables */
 :root {
@@ -14,10 +15,6 @@
   --color-scrollbar-thumb: #cbd5e1;
   --color-scrollbar-thumb-hover: #94a3b8;
   --color-focus-outline: #ff4500;
-  --color-text: #333;
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --container-max-width: 1200px;
 }
 
 /* Basic Setup */
@@ -28,9 +25,9 @@
 
 html {
   line-height: var(--line-height-base);
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
   scroll-behavior: smooth;
   font-family: var(--font-family-base);
 }
@@ -39,7 +36,6 @@ html {
 *::before,
 *::after {
   margin: 0;
-  padding: 0;
   min-width: 0;
   font: inherit;
   box-sizing: border-box;
@@ -49,8 +45,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: var(--font-family-base);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-text);
+  font-optical-sizing: auto;
   background-color: var(--color-background);
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
@@ -59,29 +54,6 @@ body {
 
 main {
   display: block;
-  padding: var(--container-padding);
-}
-
-/* Container Classes */
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.container-sm {
-  max-width: 540px;
-}
-
-.container-md {
-  max-width: 720px;
-}
-
-.container-lg {
-  max-width: 960px;
-}
-
-.container-xl {
-  max-width: var(--container-max-width);
 }
 
 /* Typography */
@@ -96,7 +68,9 @@ button,
 input,
 label {
   line-height: 1.1;
+  text-wrap: balance;
   overflow-wrap: break-word;
+  font-weight: 500;
 }
 
 body,
@@ -112,43 +86,9 @@ dd {
   margin-block-end: 0;
 }
 
-h1 {
-  font-size: 2.25rem;
-  font-weight: var(--font-weight-bold);
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: var(--font-weight-bold);
-}
-
-h3 {
-  font-size: 1.75rem;
-  font-weight: var(--font-weight-bold);
-}
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: var(--font-weight-bold);
-}
-
-h5 {
-  font-size: 1.25rem;
-  font-weight: var(--font-weight-bold);
-}
-
-h6 {
-  font-size: 1rem;
-  font-weight: var(--font-weight-bold);
-}
-
-p {
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
-}
-
-button,
+/* Forms and Buttons */
 input,
+button,
 textarea,
 select {
   font-family: inherit;
@@ -183,6 +123,10 @@ svg {
 
 img {
   vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
 }
 
 :focus-visible {
@@ -227,102 +171,4 @@ img {
 /* Target Element Scrolling */
 :target {
   scroll-margin-block: 5ex;
-}
-
-/* Accessibility Improvements */
-[tabindex]:focus:not(:focus-visible) {
-  outline: 0;
-}
-
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid var(--focus-ring-color);
-  outline-offset: var(--focus-ring-offset);
-}
-
-/* Media Queries */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none;
-    transition: none;
-    scroll-behavior: auto;
-  }
-}
-
-/* Responsive Typography */
-@media (min-width: 576px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.75rem;
-  }
-
-  h5 {
-    font-size: 1.5rem;
-  }
-
-  h6 {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 768px) {
-  h1 {
-    font-size: 2.75rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  h3 {
-    font-size: 2.25rem;
-  }
-
-  h4 {
-    font-size: 2rem;
-  }
-
-  h5 {
-    font-size: 1.75rem;
-  }
-
-  h6 {
-    font-size: 1.5rem;
-  }
-}
-
-/* Mobile Specific Styles */
-@media (max-width: 576px) {
-  body {
-    font-size: 0.875rem;
-  }
-
-  .container {
-    padding: 0 0.5rem;
-  }
-}
-
-/* Tablet Specific Styles */
-@media (min-width: 577px) and (max-width: 768px) {
-  body {
-    font-size: 1rem;
-  }
-
-  .container {
-    padding: 0 1rem;
-  }
 }
